@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right, #3E3E42, #252526);
+    font-family: 'Apercu-Regular', sans-serif;
+}
+
+header, nav {
+    height: 90px;
+    width: 100%;
+}
+
+nav, #links, #middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#middle {
+    justify-content: space-between;
+}
+
+
+#links {
+    width: fit-content;
+    list-style: none;
+    margin: 0px 75px 0px auto;
+}
+
+#links li {
+    margin: 0px 20px 0px 20px;
+}
+
+#links li a {
+    color: #F1F2F6;
+    text-decoration: none;
+}
+
+#login {
+    height: 48px;
+}
+
+#middle {
+    height: 60%;
+}
+
+#introduction {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#titles {
+    width: fit-content;
+}
+
+#titles h1 {
+    position: relative;
+    color: #F1F2F6;
+    font-size: 40px;
+}
+
+#titles h2 {
+    margin-top: 5px;
+    color: #5352ED;
+    font-size: 18px;
+    text-align: left;
+}
+
+#introduction img {
+    height: 256px;
+    animation: imageEffect 1.2s infinite;
+}
+
+@keyframes imageEffect {
+    20% {
+        transform: scale(1.1);
+    }
+
+    40% {
+        transform: scale(1.2);
+    }
+
+    80% {
+        transform: scale(1.0);
+    }
+}
+
+#footer {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+    background-color: #0000003a;
+    border-top: 3px solid #3742FA;
+}
+
+.fa-envelope, .fa-medal, .fa-house {
+    margin-right: 7.5px;
+}
+
+.fa-quote-left {
+    position: absolute;
+    left: -50px;
+}
+
+.fa-quote-right {
+    margin-left: 15px;
+}
+
+#logo {
+    margin-left: 75px;
+}
+
+#logo img {
+    height: 45.825px;
+}
